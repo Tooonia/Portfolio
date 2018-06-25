@@ -1,0 +1,111 @@
+.header-inside, .wrapper {
+  display: flex;
+}
+
+.wrapper {
+  flex-wrap: wrap;
+}
+
+.header-inside {
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.header-title-container {
+  flex-basis: 80%;
+}
+
+.logo-container {
+  flex-basis: 20%;
+}
+
+.header-logo {
+  height: 60px;
+  min-width: 57px;
+}
+
+h1.header-title {
+  font-size: 2em;
+}
+
+span.smaller-capital {
+  font-size: 0.8em;
+}
+
+h2.header-title {
+  font-size: 0.8em;
+}
+
+/*
+* Setting the breakpoints with @media queries in
+order to make the site responsive, especially for Google Nexus 5 mobile,
+Apple iPad, and Desktop:
+*/
+@media screen and (max-width: 594px) {
+  .main-image, .main-text, .project-item {
+    padding: 0 20px;
+  }
+
+  .main-top, .main-bottom {
+    max-width: 100%;
+    /* margin-left and margin-right auto keeps the elements centered even if the viewport width changes*/
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 595px) {
+    /* Changing the layout of the Projects part, so the 3 examples stay in the same line:*/
+  .project-item {
+    display: inline-block;
+    max-width: 33.3333%;
+    /* Keeps the inline-block elements in one line all together, so the max-width=33.3333% is respected by the browser*/
+    float: left;
+  }
+
+  .main-image, .main-text, .project-item {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 621px) {
+  .header-logo {
+    height: 84px;
+    min-width: 80px;
+  }
+
+  h1.header-title {
+    font-size: 2.5em;
+  }
+
+  span.smaller-capital {
+    font-size: 0.8em;
+  }
+
+  h2.header-title {
+    font-size: 1.2em;
+  }
+
+/* Setting a confortable reading layout with max-width for the text*/
+  .main-text {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header-inside, .wrapper {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1021px) {
+  .header-inside, .wrapper {
+    width: 1021px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
