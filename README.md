@@ -6,4 +6,6 @@ As soon as other projects will be completed, the site will be as well with the r
 
 Other improvements are coming soon too, like Navbar and pages to "Profile", "Portfolio" and "Contact", as well as images with own vector graphic design.
 
+In the meantime, check out the current version [here](https://tooonia.github.io/Portfolio/)!
+
 Stay tuned! :wink:
